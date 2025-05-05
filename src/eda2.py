@@ -36,14 +36,14 @@ def plot_activity_samples(df, output_path, samples_per_activity=5):
         # Plot each sample
         for j, (_, row) in enumerate(samples.iterrows()):
             # Load heatmap
-            img = cv2.imread(row["file_path"], cv2.IMREAD_GRAYSCALE)
+            img = cv2.imread(row["file_path"])
             if img is None:
                 print(f"Failed to load {row['file_path']}")
                 continue
 
             # Plot on the corresponding subplot
             ax = axes[i, j]
-            ax.imshow(img, cmap="jet", aspect="auto")
+            ax.imshow(img, aspect="auto")
             ax.set_title(f"sample{j + 1} of {user_id} eating with {activity}  ", fontsize=10)
             ax.axis("off")  # Hide axes for clarity
 

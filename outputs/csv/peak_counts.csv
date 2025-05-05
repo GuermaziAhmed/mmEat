@@ -1,0 +1,16 @@
+activity,sample_idx,positive_peaks,negative_peaks
+chopsticks,26,15,10
+chopsticks,27,17,12
+chopsticks,37,10,13
+fork,2,9,7
+fork,26,8,11
+fork,34,6,6
+bare_hand,11,13,7
+bare_hand,10,13,8
+bare_hand,12,10,7
+fork_knife,21,10,3
+fork_knife,18,6,4
+fork_knife,24,8,9
+spoon,37,9,6
+spoon,26,11,7
+spoon,11,7,4
